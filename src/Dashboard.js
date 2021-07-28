@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import axios from "axios";
+import MovieItem from './MovieItem';
 
 function Dashboard() {
     const [movies, setMovies] = useState([])
@@ -15,7 +16,7 @@ function Dashboard() {
 
     return (
         <div className="dashboard">
-            {movies.results?.map(el => <p>{el.original_title}</p>)}
+            {movies.results?.map(el =><MovieItem item={el}/>)}
 
         </div>
     )

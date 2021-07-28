@@ -1,0 +1,43 @@
+.item {
+  border: 1px solid lightpink;
+  display: flex;
+  padding: 15px;
+  margin-bottom: 15px;
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+}
+.content {
+  padding: 15px;
+}
+.image img {
+  width: 500px;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.header span {
+  font-size: 20px;
+  color: rgb(77, 77, 77);
+}
+.rating {
+  font-size: 17px;
+  font-weight: bold;
+}
+.ave {
+  background-color: orange;
+  color: #222;
+  padding: 10px;
+}
+.popularity {
+  color: #222;
+  padding: 10px;
+  background-color: red;
+}
