@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import axios from "axios";
 import MovieItem from './MovieItem';
+import './Dashboard.css'
 
 function Dashboard() {
     const [movies, setMovies] = useState([])
@@ -16,6 +17,7 @@ function Dashboard() {
 
     return (
         <div className="dashboard">
+            <div className="search"><input placeholder="Search 🔍" type="text" /><button>Search</button></div>
             {movies.results?.map(el =><MovieItem item={el}/>)}
 
         </div>
