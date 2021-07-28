@@ -17,6 +17,7 @@
   width: 500px;
 }
 .header {
+    width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
