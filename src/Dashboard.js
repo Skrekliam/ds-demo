@@ -10,7 +10,6 @@ function Dashboard() {
   console.log(movies);
   const generateUrl = (query, search="") => {
       
-https://api.themoviedb.org/3/search/movie?api_key=<<api_key>>&language=en-US&query=s&page=1&include_adult=false
     return `https://api.themoviedb.org/3/${query}?api_key=${process.env.REACT_APP_API_KEY}&language=en-US&page=1${search? `&query=${search}`: ''}`;
   };
 
@@ -35,7 +34,7 @@ https://api.themoviedb.org/3/search/movie?api_key=<<api_key>>&language=en-US&que
       </div>
       <h1>{search? `Search for: ${search}` : 'Top 20 rated films'}</h1>
       {movies.results?.map((el) => (
-        <MovieItem item={el} />
+        <MovieItem item={el} key={el.id}/>
       ))}
     </div>
   );
