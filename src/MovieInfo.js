@@ -6,7 +6,7 @@ import "./MovieInfo.css";
 function MovieInfo() {
   let { id } = useParams();
   const [movie, setMovie] = useState();
-  console.log(movie, id);
+  // console.log(movie, id);
   document.title = movie?.title ?? 'Loading...';
   useEffect(() => {
     axios
