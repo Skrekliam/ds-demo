@@ -1,7 +1,9 @@
 import React from "react";
 import "./MovieItem.css";
+import { BrowserRouter as Router, Switch, Route, Link } from "../node_modules/react-router-dom";
 
 function MovieItem({ item }) {
+  // console.log(item)
   return (
     <div className="item">
       <div className="image">
@@ -29,6 +31,9 @@ function MovieItem({ item }) {
             alt={item.original_title}
           />
         </div>
+        <Link to={item.id.toString()} className="details">
+          Details...
+        </Link>
       </div>
     </div>
   );

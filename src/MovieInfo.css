@@ -1,0 +1,12 @@
+.info table{
+    border: 1px solid lightsalmon;
+    background-color: rgba(32, 178, 171, 0.24);
+    min-width: 250px;
+    overflow-y: auto;
+}
+.info table td{
+padding: 5px;
+}
+.info table th:nth-child(odd), .info table tr td:nth-child(even){
+    background-color: rgba(252, 193, 172, 0.37);
+}
